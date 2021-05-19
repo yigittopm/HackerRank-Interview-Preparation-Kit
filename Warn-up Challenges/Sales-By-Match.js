@@ -41,7 +41,7 @@ function sockMerchant(n, ar) {
     // 10 20 20 10 10 30 50 10 20 -- ar
     // 10 20 30 50                -- list 
     for(let k=0; k<list.length; k++){
-        let gecici = 0;
+        let temp = 0; 
         let c = 0;
         for(let a=0; a<ar.length; a++){
             if(ar[a] == list[k]){
@@ -49,8 +49,8 @@ function sockMerchant(n, ar) {
                 c = ar[a]
             }
         }
-        gecici = Math.floor(gecici / (c*2));
-        result += gecici
+        temp = Math.floor(temp / (c*2));
+        result += temp
     }
     
     
