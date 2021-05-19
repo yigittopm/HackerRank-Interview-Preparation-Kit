@@ -9,8 +9,8 @@ vector<string> split_string(string);
 // 7
 
 int jumpingOnClouds(vector<int> c) {
-    int jump = 0;
-    int current = 0;
+    int jump = 0; // Jump index
+    int current = 0; // Current index
 
     while(current<c.size()){
         if(c[current + 2] == 0){
